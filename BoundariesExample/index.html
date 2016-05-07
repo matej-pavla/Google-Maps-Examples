@@ -35,12 +35,13 @@
 	
 	$('#boundary_load_select').change(function(){
 		if($(this).val()==1){
-			loadBoundariesFromGeoJson("");
+			loadBoundariesFromGeoJson("https://raw.githubusercontent.com/matej-pavla/Google-Maps-Examples/master/BoundariesExample/geojsons/world.countries.geo.json");
 		}else{
-			loadBoundariesFromGeoJson("");
+			loadBoundariesFromGeoJson("https://raw.githubusercontent.com/matej-pavla/Google-Maps-Examples/master/BoundariesExample/geojsons/us.states.geo.json");
 		}
 	});
-	 	loadBoundariesFromGeoJson("");
+	loadBoundariesFromGeoJson("https://raw.githubusercontent.com/matej-pavla/Google-Maps-Examples/master/BoundariesExample/geojsons/world.countries.geo.json");
+  });
   });
 
   function initializeDataLayer(){
